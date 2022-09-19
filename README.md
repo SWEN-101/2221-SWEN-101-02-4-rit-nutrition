@@ -11,7 +11,7 @@ nutRITion can also help users seeking a more specific diet, such as one with a l
 - Joseph Moran
 - Dylan McDonald
 - Cameron McIsaac
-- MEMBER04
+- Alana Wu
 
 
 ## Prerequisites  <_add anything else that applies_>
