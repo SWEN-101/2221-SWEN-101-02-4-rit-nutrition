@@ -7,7 +7,6 @@ nutRITion is an app designed for RIT staff and students to help users find and p
 nutRITion can also help users seeking a more specific diet, such as one with a lot of protein, one that is very low calorie, or one that is organic, filter the available options to better fit their desires. nutRITion will also help you find options that are convenient near you, which is especially useful if you’re trying to find a quick bite in between classes. Or it can show you the furthest options, if you feel like getting a good walk in.
   
 ## Team 
-<_each team member clones repo and then edits/replace with their name below_>
 - Joseph Moran
 - Dylan McDonald
 - Cameron McIsaac
