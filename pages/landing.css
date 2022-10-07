@@ -1,5 +1,7 @@
 :root {
     --ritOrange: #F36E21;
+    --buttonBackingColor: #F4D4C0;
+    --buttonTextColor: #E37639;
 }
 
 body {
@@ -19,7 +21,7 @@ body {
 }
 
 #sideBar{
-    width: 25%;
+    width: 20em;
     display: block;
     height: 94vh;
     background-color: white;
@@ -43,11 +45,23 @@ body {
   
 }
 
-.sideBarButton{
+.sideBarButton {
     margin-top: 1em;
     margin-bottom: 1em;
     width: 70%;
     height: 6em;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 16px;
+    background-color: var(--buttonBackingColor);
+    color: var(--buttonTextColor);
+    font-weight: bold;
+}
+
+.sideBarButton img{
+    height: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 #sideBarButtons{
