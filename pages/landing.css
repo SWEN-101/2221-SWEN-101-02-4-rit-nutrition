@@ -119,3 +119,9 @@ body {
     height: 100%;
     border-radius: 1em;
 }
+
+#landingBodyOne span{
+    display: inline-block;
+    align-items: center;
+    height: 80%;
+}
