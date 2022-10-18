@@ -56,7 +56,6 @@ body {
     background-color: var(--buttonBackingColor);
     color: var(--buttonTextColor);
     font-weight: bold;
-    
 }
 
 .sideBarButton img{
@@ -72,7 +71,27 @@ body {
 #mainBody {
     width: 80vw;
     display: inline;
-    background-color: pink;
+    background-color: #F2F2F6;
     height: 94vh;
     float: right 
+}
+
+#mainBodyHeader h1{
+    background-color: white;
+    padding: 0.5em;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#landingBody{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0.5em;
+    width: 100%
+}
+
+#landingBody span{
+    width: 33%;
+    display: inline-block;
+    text-align: center;
 }
