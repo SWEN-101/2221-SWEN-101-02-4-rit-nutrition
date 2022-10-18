@@ -83,15 +83,39 @@ body {
     font-weight: bold;
 }
 
-#landingBody{
+#landingBodyOne, #landingBodyThree{
     font-size: 30px;
     font-weight: bold;
     padding: 0.5em;
-    width: 100%
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 2em;
 }
 
-#landingBody span{
+#landingBodyThree span{
     width: 33%;
     display: inline-block;
     text-align: center;
+
+}
+
+#landingBodyThree span div{
+    background-color: blue;
+    height: 100%;
+    margin: 1em;
+    border-radius: 1em;
+
+}
+
+#landingBodyOne div{
+    text-align: left;
+    background-color: white;
+    margin: 1em;
+    height: 100%;
+    border-radius: 1.1em;
+}
+
+#landingBodyOne img{
+    height: 100%;
+    border-radius: 1em;
 }
