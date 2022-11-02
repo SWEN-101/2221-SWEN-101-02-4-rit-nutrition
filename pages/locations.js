@@ -7,6 +7,15 @@ class DiningLocation {
     }
 }
 
+function makeLocationCard(location){
+    return `
+    <span class = "locationCard">
+        ${location.name}
+    </span>
+    `
+    
+}
+
 function main(){
     locations = []
 
@@ -25,8 +34,7 @@ function main(){
     console.log(locationsBox)
     
     locations.forEach(location => {
-        locationsBox.innerHTML += location.name
-        
+        locationsBox.innerHTML += makeLocationCard(location)
     });
 
 }

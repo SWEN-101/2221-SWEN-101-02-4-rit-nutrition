@@ -1,0 +1,11 @@
+.locationCard {
+    display: inline-block;
+    border: 2px solid green;
+    width: 36em;
+    margin: 1em;
+    height: 15em;
+}
+
+#locationsBox{
+    text-align: center;
+}

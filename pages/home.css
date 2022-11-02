@@ -32,6 +32,10 @@
 }
 
 /* Landing Body 2 */
+#landingBodyThree{
+    text-align: center;
+}
+
 #landingBodyThree img{
     width: 100%;
     display: block;
@@ -53,5 +57,6 @@
     bottom: 4.25vw;
     color: white;
     font-size: 2vw;
+    font-weight: bold;
 }
 
