@@ -8,10 +8,13 @@ body {
     background-color: white;
     padding: 0px;
     margin: 0px;
+    display: block;
+    height: 100vh;
+
 }
 
-html, body, #mainBody, #sideBar{
-    height: 100%;
+html{
+    height: 100vh;
 }
 
 #headerBar {
@@ -24,6 +27,14 @@ html, body, #mainBody, #sideBar{
     margin: 0;
 }
 
+#ritTopLogo {
+    transform: rotate(180deg);
+    transform: rotateX(180deg);
+    height: 70%;
+    width: auto;
+    padding-left: 1em;
+}
+
 #sideBar{
     width: 20vw;
     display: inline-block;
@@ -32,14 +43,7 @@ html, body, #mainBody, #sideBar{
     margin: 0;
     text-align: center;
     border-right: black 2px solid;
-}
-
-#ritTopLogo {
-    transform: rotate(180deg);
-    transform: rotateX(180deg);
-    height: 70%;
-    width: auto;
-    padding-left: 1em;
+    height: 100%;
 }
 
 #ritNutritionTopLogo {
@@ -71,12 +75,20 @@ html, body, #mainBody, #sideBar{
     margin-top: 1em
 }
 
+
+
 #mainBody {
     width: 80vw;
     display: inline;
     background-color: #F2F2F6;
     float: right;
+    height: 94vh;
 
+}
+
+#mainBodyContent{
+    height: 100%;
+    display: inline;
 }
 
 #mainBodyHeader h1{
@@ -85,6 +97,6 @@ html, body, #mainBody, #sideBar{
     font-size: 30px;
     font-weight: bold;
 }
-
+ 
 
 

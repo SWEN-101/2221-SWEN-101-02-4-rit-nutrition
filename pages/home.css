@@ -6,7 +6,7 @@
     background-color: white;
     border-radius: 3em;
     overflow: hidden;
-    height: 100%;
+
 }
 
 #bannerLeft{
@@ -21,7 +21,6 @@
 #bannerRight{
     position: relative;
     top: 3.3vw;
-    height: 100%;
     width: 25vw;
     display: inline-block;
 

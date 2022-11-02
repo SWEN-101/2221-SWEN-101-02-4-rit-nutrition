@@ -9,7 +9,7 @@
 
 /* Location Cards */
 #locationsBox{
-    display: block;
+    display: inline-block;
     text-align: center;
     overflow: scroll;
     height: 100%;
