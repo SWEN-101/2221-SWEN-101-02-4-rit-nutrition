@@ -9,7 +9,10 @@
 
 /* Location Cards */
 #locationsBox{
+    display: block;
     text-align: center;
+    overflow: scroll;
+    height: 100%;
 }
 
 .locationCardLeft, .locationCardRight{
