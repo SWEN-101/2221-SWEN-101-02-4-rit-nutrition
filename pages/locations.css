@@ -6,6 +6,24 @@
     height: 15em;
 }
 
+
+/* Location Cards */
 #locationsBox{
     text-align: center;
+}
+
+.locationCardLeft, .locationCardRight{
+    display: inline-block;
+    margin: 0px;
+    height: 100%;
+}
+
+.locationCardLeft{
+    border: 2px solid blue;
+    width: 70%;
+}
+
+.locationCardRight{
+    border: 2px solid red;
+    width: 29%;
 }

@@ -1,7 +1,8 @@
 /* Landing Body 1 */
 #landingBodyOne {
-    margin-left: 1em;
     margin: 1em;
+    margin-left: 2.25em;
+    margin-right: 2.25em;
     background-color: white;
     border-radius: 3em;
     overflow: hidden;
