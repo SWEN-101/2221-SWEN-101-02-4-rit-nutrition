@@ -1,5 +1,5 @@
 .locationCard {
-    display: inline-block;
+    display: inline-flex;
     border: 2px solid green;
     width: 36em;
     margin: 1em;
@@ -13,17 +13,26 @@
 }
 
 .locationCardLeft, .locationCardRight{
-    display: inline-block;
+    display: inline-flex;
     margin: 0px;
-    height: 100%;
+
 }
 
 .locationCardLeft{
     border: 2px solid blue;
-    width: 70%;
+    width: 38%;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.locationCardLeft img {
+    display: inline;
+    height: 100%;
+
 }
 
 .locationCardRight{
+    height: 100%;
     border: 2px solid red;
-    width: 29%;
+    width: 62%;
 }

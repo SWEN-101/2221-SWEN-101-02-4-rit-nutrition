@@ -9,9 +9,15 @@ class DiningLocation {
 
 function makeLocationCard(location){
     return `
-    <span class = "locationCard">
-        ${location.name}
-    </span>
+        <span class = "locationCard">
+            <span class="locationCardLeft">
+                <img src="assets/ctrlalt.jpg"/>
+                Left
+            </span>
+            <span class="locationCardRight">
+                ${location.name}
+            </span>
+        </span>
     `
     
 }
