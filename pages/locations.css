@@ -39,4 +39,11 @@
 .locationCardRight{
     height: 100%;
     width: 62%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.75em;
+    position: relative;
+    padding-left: 2em;
+    text-align: left;
 }
