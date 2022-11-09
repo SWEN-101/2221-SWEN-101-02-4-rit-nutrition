@@ -11,18 +11,20 @@
 
 #bannerLeft{
     display: inline-block;
-    width: 50vw;
+    width: 65%;
 }
 
 #bannerLeft img{
-    width: 100%;
+    width: 110%;
+    overflow: hidden;
 }
 
 #bannerRight{
     position: relative;
     top: 3.3vw;
-    width: 25vw;
+    width: 34%;
     display: inline-block;
+    overflow: hidden;
 
     /* Text Modification */
     font-size: 1.75vw;
