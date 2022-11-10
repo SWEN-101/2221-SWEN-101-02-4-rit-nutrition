@@ -84,6 +84,7 @@ html{
     background-color: #F2F2F6;
     float: right;
     height: 94vh;
+    overflow: hidden;
 
 }
 
