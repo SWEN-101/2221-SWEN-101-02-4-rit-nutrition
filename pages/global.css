@@ -84,13 +84,13 @@ html{
     background-color: #F2F2F6;
     float: right;
     height: 94vh;
-    overflow: hidden;
 
 }
 
 #mainBodyContent{
     height: 89vh;
     display: inline;
+    overflow: scroll;
 }
 
 #mainBodyHeader h1{
