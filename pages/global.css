@@ -95,6 +95,9 @@ html{
 #mainBodyHeader h1{
     background-color: white;
     padding: 0.5em;
+	/* This is the change I made to fix bottom spacing with headers.  
+	 – Dylan */
+	padding-bottom: 1.5em;
     font-size: 30px;
     font-weight: bold;
     height: 5vh
