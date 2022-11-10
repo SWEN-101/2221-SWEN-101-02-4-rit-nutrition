@@ -90,6 +90,7 @@ html{
 #mainBodyContent{
     height: 89vh;
     display: inline;
+    overflow: scroll;
 }
 
 #mainBodyHeader h1{
