@@ -88,6 +88,7 @@ html{
 }
 
 #mainBodyContent{
+    margin-top: 1em;
     height: 89vh;
     display: inline-block;
     text-align: center;
