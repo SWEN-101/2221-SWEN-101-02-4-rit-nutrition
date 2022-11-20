@@ -7,11 +7,11 @@
 	border: 1px solid black;
 	justify-content: center;
 	align-items: center;
+	height: 27vw;
 }
 
 #leftCard{
 	width: 35vw;
-	height: 27vw;
 	overflow: hidden;
 	border-radius: 2em;
 }
@@ -23,4 +23,34 @@
 #leftCard img{
 	height: 100%;
 	display: inline;
+}
+
+#locationDescription{
+	padding-top: 0.5em;
+	padding-left: 0.2em;
+	display: inline-flex;
+	width: 75vw;
+	text-align: left;
+	font-size: 20px;
+}
+
+#menuHeader{
+	display: inline-flex;
+	font-size: 32px;
+	font-weight: bold;
+	width: 75vw;
+	text-align: left;
+	margin-top: 1.5em;
+}
+
+#menuButtons{
+	display: inline-flex;
+	width: 75vw;
+}
+
+.menuButton{
+	margin: 0.5em;
+	width: 14vw;
+	height: 3em;
+	border-radius: 0.75em;
 }
