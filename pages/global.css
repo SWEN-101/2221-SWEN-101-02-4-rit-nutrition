@@ -89,8 +89,10 @@ html{
 
 #mainBodyContent{
     height: 89vh;
-    display: inline;
+    display: inline-block;
+    text-align: center;
     overflow: scroll;
+    height: 100%;
 }
 
 #mainBodyHeader h1{

@@ -1,11 +1,11 @@
 
 /* Location Cards */
-#locationsBox{
+/* #locationsBox{
     display: inline-block;
     text-align: center;
     overflow: scroll;
     height: 100%;
-}
+} */
 
 .locationCard {
     display: inline-flex;

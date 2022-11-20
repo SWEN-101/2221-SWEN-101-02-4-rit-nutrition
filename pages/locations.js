@@ -48,7 +48,7 @@ function main(){
 
 
     console.log(document)
-    locationsBox = document.getElementById("locationsBox");
+    locationsBox = document.getElementById("mainBodyContent");
     console.log(locationsBox)
     
     locations.forEach(location => {
