@@ -1,0 +1,27 @@
+/* Code segment below removes the annoying x to the right of the search box */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+#searchForm{
+    margin-top: 6em;
+    display: inline-block;
+    text-align: center;
+}
+
+#searchField{
+    margin-top: 1em;
+    width: 70vw;
+    border: 0px solid black;
+    border-radius: 1em;
+    color: var(--ritOrange);
+    font-size: 3em;
+    padding-left: 0.5em;
+    outline: none;
+    
+}
+
+
+
