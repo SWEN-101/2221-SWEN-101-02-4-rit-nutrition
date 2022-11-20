@@ -10,10 +10,18 @@
     <!-- Below is a link to the bootstrap stylesheet cdn, may need to be updated in some far far far awat future, using mostly for the table layout-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="accounts.css">
     <script src="global.js"></script>
     <title>RIT Nutrition</title>
 </head>
+<style>
+    .rectangle {
+        height: 50px;
+        width: 200px;
+        background:white;
+        color:black;
+        text-align:center;
+    }
+</style>
 <body>
     <header id="websiteHeader">
         <span id="headerBar">
@@ -65,34 +73,25 @@
     </span>
 
     <span id="mainBody">
-        
-        <span id="mainBodyHeader">
+        <div id="mainBodyHeader">
             <h1>
-                Home
+                Item Details
             </h1>
-        </span>
-        <span id="mainBodyContent">
-            <div id="landingBodyOne">
-                <!-- Top Sliding Banner -->
-                <span id="right">
-                    <img src="assets/face_placeholder.jpg"/>
-                </span>
-                <span id="bannerRight">
-                    Edit 2FA Setup
-                    <br>
-                   Change Password
-                    <br>
-                    Edit Personal Info
-                    <br>
-                    Delete Account
-                </span>
-                <span id="left">
-                    <img class="categoryBanner" src="assets/face_placeholder.jpg"/>
-                    <div>account</div>
-                </span>
-            </div>
-            
-        </span>
+            <image src="assets/protein.png" widith="200" height="200"/>
+        </div>
+        <div>
+            Item Name
+        </div>
+        <div class="rectangle">
+            <h2>
+                High Protein
+            </h2>
+        </div>
+        <div class="rectangle">
+            <h3>
+                High Calorie
+            </h3>
+        </div>
     </span>
 </body>
 </html>
