@@ -1,60 +1,15 @@
-/* Landing Body 1 */
-#landingBodyOne {
+#profileBox, #accountOptionsBox{
+	display: inline-flex;
+	width: 34vw;
+	height: 20em;
+	border: 1px solid black;
 	margin: 1em;
-	margin-left: 2.25em;
-	margin-right: 2.25em;
-	background-color: white;
-	border-radius: 3em;
-	overflow: hidden;
 }
 
-#bannerLeft {
-	margin: 1em;
-	margin-left: 2.25em;
-	margin-right: 2.25em;
-	background-color: white;
-	border-radius: 3em;
-	overflow: hidden;
-	width: 50vw;
+#profileBox{
+
 }
 
-#bannerLeft img {
-	width: 100%;
-}
+#accountOptionsBox{
 
-#bannerRight {
-	position: relative;
-	top: 3.3vw;
-	width: 25vw;
-	display: inline-block;
-
-	/* Text Modification */
-	font-size: 1.75vw;
-}
-
-/* Landing Body 2 */
-#landingBodyThree {
-	text-align: center;
-}
-
-#landingBodyThree img {
-	width: 100%;
-	display: block;
-	padding: 1em;
-	border-radius: 3em;
-}
-
-#landingBodyThree span {
-	width: 26vw;
-	display: inline-block;
-}
-
-#landingBodyThree span div {
-	display: block;
-	position: relative;
-	text-align: center;
-	bottom: 4.25vw;
-	color: white;
-	font-size: 2vw;
-	font-weight: bold;
 }
