@@ -53,7 +53,8 @@
 }
 
 .menuButton{
-	margin: 0.5em;
+	margin-right: 1em;
+	margin-top: 0.5em;
 	text-align: center;
 	width: 14vw;
 	height: 3em;
