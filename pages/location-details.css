@@ -4,7 +4,6 @@
 
 #leftCard, #rightCard{
 	display: inline-flex;
-	border: 1px solid black;
 	justify-content: center;
 	align-items: center;
 	height: 27vw;
@@ -18,6 +17,10 @@
 
 #rightCard{
 	width: 40vw;
+	text-align: left;
+	justify-content: left;
+	padding-left: 2em;
+	min-width: 400px;
 }
 
 #leftCard img{
@@ -40,7 +43,8 @@
 	font-weight: bold;
 	width: 75vw;
 	text-align: left;
-	margin-top: 1.5em;
+	margin-top: 1.25em;
+	margin-bottom: 0.25em;
 }
 
 #menuButtons{
@@ -50,7 +54,33 @@
 
 .menuButton{
 	margin: 0.5em;
+	text-align: center;
 	width: 14vw;
 	height: 3em;
-	border-radius: 0.75em;
+	border-radius: 15px;
+    font-size: 16px;
+    background-color: var(--buttonBackingColor);
+    color: var(--buttonTextColor);
+	font-weight: bold;
 }
+
+#locationLocation{
+	font-size: 1.8vw;
+}
+
+#locationLocation img{
+	height: 1.8vw;
+	position: relative;
+	bottom: 2px;
+}
+
+#locationName{
+	font-weight: bold;
+	font-size: 2.4vw;
+}
+
+#locationHours{
+	font-size: 1.6vw
+}
+
+

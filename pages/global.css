@@ -107,6 +107,10 @@ html{
     font-weight: bold;
     height: 5vh
 }
+
+button{
+    border: 0px;
+}
  
 
 
