@@ -1,15 +1,33 @@
+#mainCard{
+	display: inline-flex;
+}
+
 #profileBox, #accountOptionsBox{
 	display: inline-flex;
 	width: 34vw;
 	height: 20em;
-	border: 1px solid black;
+	border-radius: 2em;
 	margin: 1em;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
 }
 
-#profileBox{
-
+#profileInfoContainer{
+	display: block;
 }
 
-#accountOptionsBox{
+#profileBox img{
+	width: 10em;
+	height: 10em;
+	border-radius: 5em;
+}
 
+#profileName{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#profileEmail{
+	font-size: 25px;
 }
