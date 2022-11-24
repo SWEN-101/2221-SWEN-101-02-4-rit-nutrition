@@ -1,16 +1,26 @@
 #mainCard{
 	display: inline-flex;
+	width: 70vw;
+	justify-content: center;
 }
 
 #profileBox, #accountOptionsBox{
 	display: inline-flex;
-	width: 34vw;
+	width: 50%;
 	height: 20em;
 	border-radius: 2em;
-	margin: 1em;
 	align-items: center;
 	justify-content: center;
 	background-color: white;
+	margin-bottom: 0px;
+}
+
+#profileBox{
+	margin-right: 0.75em;
+}
+
+#accountOptionsBox{
+	margin-left: 0.75em;
 }
 
 #profileInfoContainer{
@@ -30,4 +40,14 @@
 
 #profileEmail{
 	font-size: 25px;
+}
+
+#lowerCard{
+	border: 1px solid black;
+	display: inline-flex;
+	margin-top: 1.5em;
+	width: 70vw;
+	height: 40em;
+	border-radius: 2em;
+	background-color: white;
 }
