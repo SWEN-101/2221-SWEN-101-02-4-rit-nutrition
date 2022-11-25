@@ -23,7 +23,7 @@
 	margin-left: 0.75em;
 }
 
-#profileInfoContainer{
+#profileInfoContainer, #accountOptionContainer{
 	display: block;
 }
 
@@ -31,15 +31,33 @@
 	width: 10em;
 	height: 10em;
 	border-radius: 5em;
+	margin-bottom: 1em;
 }
 
 #profileName{
 	font-size: 40px;
 	font-weight: bold;
+	line-height: 90%;
+	margin-top: 1em;
 }
 
 #profileEmail{
 	font-size: 25px;
+}
+
+#accountOptionsBox img{
+	height: 5em;
+}
+
+#accountOptionsText{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.accountOptionsButton{
+	width: 14vw;
+	height: 3em;
+	margin: 0.5em;
 }
 
 #lowerCard{
