@@ -23,7 +23,7 @@
 	margin-left: 0.75em;
 }
 
-#profileInfoContainer, #accountOptionContainer{
+#profileInfoContainer, #accountOptionContainer, #lowerCardContainer{
 	display: block;
 }
 
@@ -66,11 +66,34 @@
 }
 
 #lowerCard{
-	border: 1px solid black;
 	display: inline-flex;
 	margin-top: 1.5em;
 	width: 70vw;
 	height: 40em;
 	border-radius: 2em;
 	background-color: white;
+}
+
+#lowerCardContainer{
+	text-align: center;
+	width: 100%;
+}
+
+#lowerCardHeader{
+	text-align: left;
+	display: block;
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 1.2em;
+}
+
+#lowerCardContent{
+	padding: 1.2em;
+	display: block;
+	font-size: 24px;
+	font-weight: initial;
+	font-style: italic;
+	color: var(--buttonTextColor);
+	width: 100%;
 }

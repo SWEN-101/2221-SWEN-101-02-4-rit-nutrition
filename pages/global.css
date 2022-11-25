@@ -45,6 +45,7 @@ html{
     text-align: center;
     border-right: black 2px solid;
     height: 94vh;
+    overflow: scroll;
 }
 
 #ritNutritionTopLogo {

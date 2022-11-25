@@ -17,6 +17,8 @@
 #bannerLeft img{
     width: 110%;
     overflow: hidden;
+    position: relative;
+    right: 0.2em;
 }
 
 #bannerRight{
