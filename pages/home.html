@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="home.css">
     <script src="global.js"></script>
+    <script src="home.js"></script>
     <title>RIT Nutrition</title>
 </head>
 <body>
@@ -81,18 +82,22 @@
             </div>
             <div id="landingBodyThree">
                 <span id="left">
+                    <a link onclick="selectCategory('protein')">
                         <img class="categoryBanner" src="assets/protein.png"/>
                         <div>Protein</div>
-                        
+                    </a>   
                 </span>
                 <span id="middle">
+                    <a link onclick="selectCategory('vegetarian')">
                         <img class="categoryBanner" src="assets/vegetarian.png"/>
-                        <div>Vegetarian</div>
-                        
+                        <div>Vegetarian</div> 
+                    </a>  
                 </span>
                 <span id="right">
-                    <img class="categoryBanner" src="assets/lowCalorie.png"/>
-                    <div>Low Calorie</div>
+                    <a link onclick="selectCategory('lowCalorie')">
+                        <img class="categoryBanner" src="assets/lowCalorie.png"/>
+                        <div>Low Calorie</div>
+                    </a>
                 </span>
             </div>
             
