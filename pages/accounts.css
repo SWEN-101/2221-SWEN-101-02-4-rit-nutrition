@@ -58,6 +58,11 @@
 	width: 14vw;
 	height: 3em;
 	margin: 0.5em;
+	border-radius: 1em;
+	background-color: var(--buttonBackingColor);
+    color: var(--buttonTextColor);
+	font-weight: bold;
+	/* Need to do work on font size here at some point because it gets weird when resizing*/
 }
 
 #lowerCard{
