@@ -1,7 +1,8 @@
 class DiningLocation {
-    constructor(name, location, schedule = null){ //Schedule will eventually be it's own object, but for the time being just gonna leave it as null
+    constructor(name, location, image_path){ //Schedule will eventually be it's own object, but for the time being just gonna leave it as null
         this.name = name
         this.location = location
+        this.image = image_path
     }
 }
 
@@ -9,22 +10,15 @@ class DiningLocation {
 locations = []
 
 //Locations Data
-locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall"))
-locations.push(new DiningLocation("The Commons", "N/A"))
-locations.push(new DiningLocation("Gracies", "Grace Watson Hall"))
-locations.push(new DiningLocation("Crossroads", "Global Village"))
-locations.push(new DiningLocation("Brick City", "Student Alumni Union"))
-locations.push(new DiningLocation("Beanz", "Grace Watson Hall"))
-locations.push(new DiningLocation("Sol Underground", "Tunnel"))
-locations.push(new DiningLocation("Artesano's", "Student Alumni Union"))
-locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall"))
-locations.push(new DiningLocation("The Commons", "N/A"))
-locations.push(new DiningLocation("Gracies", "Grace Watson Hall"))
-locations.push(new DiningLocation("Crossroads", "Global Village"))
-locations.push(new DiningLocation("Brick City", "Student Alumni Union"))
-locations.push(new DiningLocation("Beanz", "Grace Watson Hall"))
-locations.push(new DiningLocation("Sol Underground", "Tunnel"))
-locations.push(new DiningLocation("Artesano's", "Student Alumni Union"))
+locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("The Commons", "N/A", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Gracies", "Grace Watson Hall", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Crossroads", "Global Village", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Brick City", "Student Alumni Union", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Beanz", "Grace Watson Hall", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Sols Underground", "Tunnel", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Artesanos", "Student Alumni Union", "assets/ctrlalt.jpg"))
+
 
 localStorage.setItem("locationData", JSON.stringify(locations))
 
@@ -37,17 +31,33 @@ class PersistantData { //This object will be used to store all of our persistent
     }
     load(){
         let loadedObject = JSON.parse(localStorage.getItem("storedData"))
+        this.locations = JSON.parse(localStorage.getItem("locationData"))
         if(loadedObject == null){
             this.save()
         }else{
             this.selectedLocation = loadedObject.selectedLocation
             this.selectedCategory = loadedObject.selectedCategory
-            this.locations = JSON.parse(localStorage.getItem("locationData"))
         }    
     }
     clear(){
         this.selectedLocation = null
         this.selectedCategory = null
+    }
+    getLocation(){
+        let foundLocation = null
+        this.locations.forEach(location => {
+            console.log(location.name)
+            if(location.name == this.selectedLocation){
+                foundLocation = location
+                return
+            }
+        });
+
+        if(foundLocation != null){
+            return foundLocation
+        }
+
+        throw `Could not find location: ${this.selectedLocation}` 
     }
 }
 
@@ -56,12 +66,6 @@ storedData.load()
 
 
 
-
-
-function clearData(){
-    storedData = new PersistantData()
-    storedData.save()
-}
 
 
     
