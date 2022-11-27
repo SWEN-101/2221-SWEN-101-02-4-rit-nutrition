@@ -1,38 +1,32 @@
 /* Landing Body 1 */
 #landingBodyOne {
-    margin: 1em;
-    margin-left: 2.25em;
-    margin-right: 2.25em;
+    display: inline-flex;
+    width: 75vw;
     background-color: white;
-    border-radius: 3em;
+    border-radius: 2em;
     overflow: hidden;
 
 }
 
 #bannerLeft{
-    display: inline-block;
-    width: 65%;
+    display: inline-flex;
+    width: 70%;
 }
 
 #bannerLeft img{
-    width: 110%;
-    overflow: hidden;
-    position: relative;
-    right: 0.2em;
+    width: 100%
 }
 
-#bannerRight{
-    position: relative;
-    top: 3.3vw;
-    width: 34%;
-    display: inline-block;
-    overflow: hidden;
 
+#bannerRight{
+    width: 30%;
+    display: inline-flex;
+    overflow: hidden;
     /* Text Modification */
     font-size: 1.75vw;
-
-
-
+    align-items: center;
+    justify-content: left;
+    text-align: left;
 }
 
 /* Landing Body 2 */
