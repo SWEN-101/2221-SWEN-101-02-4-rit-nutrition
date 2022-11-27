@@ -10,14 +10,14 @@ class DiningLocation {
 locations = []
 
 //Locations Data
-locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("The Commons", "N/A", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("Gracies", "Grace Watson Hall", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("Crossroads", "Global Village", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("Brick City", "Student Alumni Union", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("Beanz", "Grace Watson Hall", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("Sols Underground", "Tunnel", "assets/ctrlalt.jpg"))
-locations.push(new DiningLocation("Artesanos", "Student Alumni Union", "assets/ctrlalt.jpg"))
+locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall", "assets/locations/ctrlalt.jpg"))
+locations.push(new DiningLocation("The Commons", "N/A", "assets/locations/commons.jpeg"))
+locations.push(new DiningLocation("Gracies", "Grace Watson Hall", "assets/locations/gracies.jpeg"))
+locations.push(new DiningLocation("Crossroads", "Global Village", "assets/locations/crossroads.jpeg"))
+locations.push(new DiningLocation("Brick City", "Student Alumni Union", "assets/locations/brick_city.jpeg"))
+locations.push(new DiningLocation("Beanz", "Grace Watson Hall", "assets/locations/beanz.jpeg"))
+locations.push(new DiningLocation("Sols Underground", "Tunnel", "assets/locations/sols.jpeg"))
+locations.push(new DiningLocation("Artesanos", "Student Alumni Union", "assets/locations/artesanos.jpeg"))
 
 
 localStorage.setItem("locationData", JSON.stringify(locations))

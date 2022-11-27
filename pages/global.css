@@ -95,7 +95,7 @@ html{
     overflow: scroll;
     height: 100%;
     width: 100%;
-    padding-top: 2em;
+    padding-top: 2em; /* Wanna come back and make this padding page specific */
 }
 
 #mainBodyHeader h1{

@@ -2,8 +2,7 @@ function makeLocationCard(location){
     return `
         <span class = "locationCard" onclick="selectLocation('${location.name}')">
             <span class="locationCardLeft">
-                <img src="assets/ctrlalt.jpg"/>
-                Left
+                <img src="${location.image}"/>
             </span>
             <span class="locationCardRight">
                 ${location.name}
