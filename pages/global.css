@@ -65,6 +65,20 @@ html{
     background-color: var(--buttonBackingColor);
     color: var(--buttonTextColor);
     font-weight: bold;
+    outline: none;
+}
+
+.sideBarButton:focus{
+    outline: none;
+}
+
+#selectedButton{
+    background-color: var(--buttonTextColor);
+    color: white;
+}
+
+#selectedButton img{
+    filter: invert(1);
 }
 
 .sideBarButton img{
