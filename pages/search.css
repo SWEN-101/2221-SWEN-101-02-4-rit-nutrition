@@ -11,6 +11,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-align: center;
 }
 
+#searchForm h2{
+    font-size: 3em;
+}
+
 #searchField{
     margin-top: 1em;
     width: 70vw;
