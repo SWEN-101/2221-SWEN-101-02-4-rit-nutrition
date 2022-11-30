@@ -67,6 +67,17 @@ function makeBody(location){
                         Low Calorie
                     </button>
                 </span>
+                <br>
+                <span id="foodContent">
+                    <span id="foodItem">
+                        <span id="leftFoodCard">
+                            <img src="assets/foods/fries.jpeg"/>
+                        </span>
+                        <span id="rightFoodCard">
+                            Words
+                        </span>
+                    </span>
+                </span>
             </div>
         </div>
     `

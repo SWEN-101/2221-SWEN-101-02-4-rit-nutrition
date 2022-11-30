@@ -84,4 +84,13 @@
 	font-size: 1.6vw
 }
 
+#foodContent{
+	border: 1px solid black;
+	width: 75vw;
+	display: inline-flex;
+	margin-top: 1.5em;
+}
 
+#leftFoodCard img{
+	width: 100px;
+}

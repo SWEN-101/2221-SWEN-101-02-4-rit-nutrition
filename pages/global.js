@@ -1,9 +1,9 @@
 class FoodItem {
-    constructor(name, price, calories, image_path){
+    constructor(name, price, calories, imagePath){
         this.name = name
         this.price = price
         this.calories = calories
-        this.image = image_path
+        this.image = imagePath
     }
 }
 
@@ -11,7 +11,16 @@ class FoodItem {
 let foods = []
 
 //This is where all the food data will be pushed
-foods.push(null)
+foods.push("Mozzarella Sticks", 6.00, 764, "assets/foods/mozz_sticks.jpeg") 
+foods.push("Chicken Fingers", 7.50, 525, "assets/foods/chicken_fingers.jpeg")
+foods.push("Grilled Cheese", 3.50, 650, "assets/foods/grilled_cheese.jpeg")
+foods.push("Pizza Slice", 3.50, 310, "assets/foods/pizza.jpeg")
+foods.push("Mac and Cheese", 5.25, 325, "assets/foods/mac_and_cheese.jpeg")
+foods.push("Fries", 3.00, 365, "assets/foods/fries.jpeg")
+foods.push("Turkey Melt", 5.00, 410, "assets/foods/turkey_melt.jpeg")
+foods.push("Chicken Soup", 6.50, 150, "assets/foods/chicken_soup.jpeg")
+foods.push("Fish Fingers", 8.00, 425, "assets/foods/fish_fingers.jpeg")
+foods.push("Sushi", 9.00, 410, "assets/foods/sushi.jpeg")
 
 class DiningLocation {
     constructor(name, location, image_path){ //Schedule will eventually be it's own object, but for the time being just gonna leave it as null
