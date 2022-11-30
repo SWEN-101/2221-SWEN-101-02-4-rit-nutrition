@@ -68,13 +68,21 @@ function makeBody(location){
                     </button>
                 </span>
                 <br>
-                <span id="foodContent">
-                    <span id="foodItem">
-                        <span id="leftFoodCard">
-                            <img src="assets/foods/fries.jpeg"/>
+                <span class="foodContent">
+                    <span class="foodItem">
+                        <span class="leftFoodCard">
+                            <span class="foodImageContainer">
+                                <img src="assets/foods/fries.jpeg"/>
+                            </span> 
                         </span>
-                        <span id="rightFoodCard">
-                            Words
+                        <span class="rightFoodCard">
+                            <span class="foodInfoContainer">
+                                <span class="foodName">Fries</span>
+                                <br>
+                                <span class="foodPrice">$3.50</span>
+                                <br>
+                                <span class="foodCalories">320</span>
+                            </span>
                         </span>
                     </span>
                 </span>
