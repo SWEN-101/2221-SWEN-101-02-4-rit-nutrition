@@ -103,7 +103,6 @@ html{
 }
 
 #mainBodyContent{
-    height: 89vh;
     display: inline-block;
     text-align: center;
     overflow: scroll;

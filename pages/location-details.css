@@ -90,6 +90,7 @@
 	display: inline-flex;
 	margin-top: 1.5em;
 	justify-content: center;
+	height: 100em;
 }
 
 .foodItem{
