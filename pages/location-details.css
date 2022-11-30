@@ -84,36 +84,43 @@
 	font-size: 1.6vw
 }
 
-.foodContent{
-	border: 1px solid black;
+#foodContent{
 	width: 75vw;
-	display: inline-flex;
+	display: inline-block;
 	margin-top: 1.5em;
-	justify-content: center;
 	height: 100em;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 .foodItem{
 	display: inline-flex;
-	border: 1px solid green;
-	width: 20em;
-	height: 9em;
+	width: 24em;
+	height: 12em;
+	border-radius: 2em;
+	overflow: hidden;
+	background-color: white;
+	margin: 1em;
 }
 
 .leftFoodCard img{
-	width: 100%;
+	height: 100%;
+	
 }
 
 .leftFoodCard, .rightFoodCard{
 	display: inline-flex;
+	overflow: hidden;
 }
 
 .leftFoodCard{
 	width: 12em;
+	height: 100%;
+	background-color: red;
 }
 
 .rightFoodCard{
-	width: 8em;
+	width: 12em;
 	justify-content: left;
 	align-items: center;
 	padding-left: 1em;
@@ -121,7 +128,8 @@
 
 .foodInfoContainer, .foodImageContainer{
 	display: inline-block;
-	border: 2px solid red;
+	text-align: left;
+	overflow: hidden;
 }
 
 

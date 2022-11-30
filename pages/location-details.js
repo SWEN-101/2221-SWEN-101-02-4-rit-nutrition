@@ -69,31 +69,47 @@ function makeBody(location){
                 </button>
             </span>
             <br>
-            <span class="foodContent">
-                <span class="foodItem">
-                    <span class="leftFoodCard">
-                        <span class="foodImageContainer">
-                            <img src="assets/foods/fries.jpeg"/>
-                        </span> 
-                    </span>
-                    <span class="rightFoodCard">
-                        <span class="foodInfoContainer">
-                            <span class="foodName">Fries</span>
-                            <br>
-                            <span class="foodPrice">$3.50</span>
-                            <br>
-                            <span class="foodCalories">320</span>
-                        </span>
-                    </span>
-                </span>
+            <span id="foodContent">
+                
             </span>
         </span>
         
     `
 }
 
+function makeFoodItems(location){
+    itemBody = ""
+    location.foodItems.forEach(food => {
+        newItem = `
+            <span class="foodItem">
+                <span class="leftFoodCard">
+                    <span class="foodImageContainer">
+                        <img src="${food.image}"/>
+                    </span> 
+                </span>
+                <span class="rightFoodCard">
+                    <span class="foodInfoContainer">
+                        <span class="foodName">${food.name}</span>
+                        <br>
+                        <span class="foodPrice">$${food.price}</span>
+                        <br>
+                        <span class="foodCalories">${food.calories}</span>
+                    </span>
+                </span>
+            </span>
+        `
+        itemBody += newItem
+    });
+    return itemBody
+}
+
+
+
 function main(){
     mainBody = document.getElementById("mainBody")
     pointLocation = storedData.getLocation()
     mainBody.innerHTML = makeBody(pointLocation)
+    foodContent = document.getElementById("foodContent")
+    foodContent.innerHTML = makeFoodItems(pointLocation)
+    
 }

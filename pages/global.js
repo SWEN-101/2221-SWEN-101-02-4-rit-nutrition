@@ -11,23 +11,23 @@ class FoodItem {
 let foods = []
 
 //This is where all the food data will be pushed
-foods.push("Mozzarella Sticks", 6.00, 764, "assets/foods/mozz_sticks.jpeg") 
-foods.push("Chicken Fingers", 7.50, 525, "assets/foods/chicken_fingers.jpeg")
-foods.push("Grilled Cheese", 3.50, 650, "assets/foods/grilled_cheese.jpeg")
-foods.push("Pizza Slice", 3.50, 310, "assets/foods/pizza.jpeg")
-foods.push("Mac and Cheese", 5.25, 325, "assets/foods/mac_and_cheese.jpeg")
-foods.push("Fries", 3.00, 365, "assets/foods/fries.jpeg")
-foods.push("Turkey Melt", 5.00, 410, "assets/foods/turkey_melt.jpeg")
-foods.push("Chicken Soup", 6.50, 150, "assets/foods/chicken_soup.jpeg")
-foods.push("Fish Fingers", 8.00, 425, "assets/foods/fish_fingers.jpeg")
-foods.push("Sushi", 9.00, 410, "assets/foods/sushi.jpeg")
+foods.push(new FoodItem("Mozzarella Sticks", 6.00, 764, "assets/foods/mozz_sticks.jpeg")) 
+foods.push(new FoodItem("Chicken Fingers", 7.50, 525, "assets/foods/chicken_fingers.jpeg"))
+foods.push(new FoodItem("Grilled Cheese", 3.50, 650, "assets/foods/grilled_cheese.jpeg"))
+foods.push(new FoodItem("Pizza Slice", 3.50, 310, "assets/foods/pizza.jpeg"))
+foods.push(new FoodItem("Mac and Cheese", 5.25, 325, "assets/foods/mac_and_cheese.jpg"))
+foods.push(new FoodItem("Fries", 3.00, 365, "assets/foods/fries.jpeg"))
+foods.push(new FoodItem("Turkey Melt", 5.00, 410, "assets/foods/turkey_melt.jpeg"))
+foods.push(new FoodItem("Chicken Soup", 6.50, 150, "assets/foods/chicken_soup.jpeg"))
+foods.push(new FoodItem("Fish Fingers", 8.00, 425, "assets/foods/fish_fingers.jpeg"))
+foods.push(new FoodItem("Sushi", 9.00, 410, "assets/foods/sushi.jpeg"))
 
 class DiningLocation {
     constructor(name, location, image_path){ //Schedule will eventually be it's own object, but for the time being just gonna leave it as null
         this.name = name
         this.location = location
         this.image = image_path
-        this.food = [] //Every location is going to have the same selection of food because time is tight and SWEN 101 wants a good looking project not a working project which is silly but yeah
+        this.foodItems = foods //Every location is going to have the same selection of food because time is tight and SWEN 101 wants a good looking project not a working project which is silly but yeah
     }
 }
 
@@ -71,7 +71,6 @@ class PersistantData { //This object will be used to store all of our persistent
     getLocation(){
         let foundLocation = null
         this.locations.forEach(location => {
-            console.log(location.name)
             if(location.name == this.selectedLocation){
                 foundLocation = location
                 return
