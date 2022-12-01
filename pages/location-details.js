@@ -47,7 +47,9 @@ function makeBody(location){
             </span>
             <br>
             <span id="locationDescription">
-                Take control and design your sandwich, pizza, panini, or wrap. Ctrl Alt Deli offers a variety of signature breakfast and lunch sandwiches, pizzas, paninis, and wraps. They also offer several grab-and-go options such as bagels, baked goods, pastries, fresh fruit, and salad.
+                ${location.description}
+                <!--Take control and design your sandwich, pizza, panini, or wrap. Ctrl Alt Deli offers a variety of signature breakfast and lunch sandwiches, pizzas, paninis, and wraps. They also offer several grab-and-go options such as bagels, baked goods, pastries, fresh fruit, and salad.
+                    -->
             </span>
             <!-- Below will be the menu section -->
             <br>
@@ -93,7 +95,7 @@ function makeFoodItems(location){
                         <br>
                         <span class="foodPrice">$${food.price}</span>
                         <br>
-                        <span class="foodCalories">${food.calories}</span>
+                        <span class="foodCalories">${food.calories} Calories</span>
                     </span>
                 </span>
             </span>

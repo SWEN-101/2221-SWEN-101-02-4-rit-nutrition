@@ -23,11 +23,12 @@ foods.push(new FoodItem("Fish Fingers", 8.00, 425, "assets/foods/fish_fingers.jp
 foods.push(new FoodItem("Sushi", 9.00, 410, "assets/foods/sushi.jpeg"))
 
 class DiningLocation {
-    constructor(name, location, image_path){ //Schedule will eventually be it's own object, but for the time being just gonna leave it as null
+    constructor(name, location, image_path, description){ //Schedule will eventually be it's own object, but for the time being just gonna leave it as null
         this.name = name
         this.location = location
         this.image = image_path
         this.foodItems = foods //Every location is going to have the same selection of food because time is tight and SWEN 101 wants a good looking project not a working project which is silly but yeah
+        this.description = description
     }
 }
 
@@ -35,14 +36,14 @@ class DiningLocation {
 let locations = []
 
 //Locations Data, have to push like this because I was getting weird crashing issues when I assigned them within the list
-locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall", "assets/locations/ctrlalt.jpg"))
-locations.push(new DiningLocation("The Commons", "Briggs", "assets/locations/commons.jpeg"))
-locations.push(new DiningLocation("Gracies", "Grace Watson Hall", "assets/locations/gracies.jpeg"))
-locations.push(new DiningLocation("Crossroads", "Global Village", "assets/locations/crossroads.jpeg"))
-locations.push(new DiningLocation("Brick City", "Student Alumni Union", "assets/locations/brick_city.jpeg"))
-locations.push(new DiningLocation("Beanz", "Grace Watson Hall", "assets/locations/beanz.jpeg"))
-locations.push(new DiningLocation("Sols Underground", "Tunnels", "assets/locations/sols.jpeg"))
-locations.push(new DiningLocation("Artesanos", "Student Alumni Union", "assets/locations/artesanos.jpeg"))
+locations.push(new DiningLocation("Ctrl Alt DELi", "Golisano Hall", "assets/locations/ctrlalt.jpg", "Take control and design your sandwich, pizza, panini, or wrap. Ctrl Alt Deli offers a variety of signature breakfast and lunch sandwiches, pizzas, paninis, and wraps. They also offer several grab-and-go options such as bagels, baked goods, pastries, fresh fruit, and salad."))
+locations.push(new DiningLocation("The Commons", "Briggs", "assets/locations/commons.jpeg", "The Commons offers a wide menu selection with one of the best views on campus. Features include lunch and dinner entrées, the Shumway sub and salad station, Hettie’s Grill, stone oven pizza, pasta cucina, soups, and made-to-order salads."))
+locations.push(new DiningLocation("Gracies", "Grace Watson Hall", "assets/locations/gracies.jpeg", "Gracie’s is our largest dining facility and is newly renovated with a greater variety of food options, including build-your-own meals at every station. The facility is peanut and tree nut free, except coconut. Find the largest selection of plant-based options, brick oven pizza, daily specials, BBQ, all-you-care-to-eat breakfast bar, a pita sandwich, and grab-and-go. Gracie’s serves gluten free and vegan foods everyday within the Grain Bowl station. This station eliminates eight allergens – crustacean shellfish, eggs, fish, milk, peanuts, sesame seeds, tree nuts, and wheat."))
+locations.push(new DiningLocation("Crossroads", "Global Village", "assets/locations/crossroads.jpeg", "The Café and Market at Crossroads features a market-style food court serving Asian cuisine, daily chef specials, grill, pizza, paninis, subs, salads, and hand-made sushi."))
+locations.push(new DiningLocation("Brick City", "Student Alumni Union", "assets/locations/brick_city.jpeg", "Brick City Café features a wide variety of breakfast, and lunch entrées with daily specials. They offer breakfast sandwiches, a breakfast grill, build your own salad station, daily entree specials, and daily vegetarian entree specials. Grab-and-go salads, fruit cups, and yogurts, bottled beverages and coffee from Finger Lakes Coffee Roasters® is available."))
+locations.push(new DiningLocation("Beanz", "Grace Watson Hall", "assets/locations/beanz.jpeg", "Beanz serves Finger Lakes Coffee Roasters® espresso drinks, milkshakes, and seasonal specialty drinks. It also offers a wide selection of freshly baked goods, desserts, salads, sandwiches, and Ultimate Smoothis Blendz (USB) smoothies blended with real fruits, vegetables, and cold-pressed juices from a local orchard, Red Jacket Orchards."))
+locations.push(new DiningLocation("Sols Underground", "Tunnels", "assets/locations/sols.jpeg", "Stop in for a scoop of RIT specialty made Tiger Stripes ice cream from Perry's® Ice Cream or choose from over 20 other flavors. Open later than other dining locations, Sol's Underground is the best stop to satisfy those late night cravingswith quesadillas, paninis, wraps, or pizza. "))
+locations.push(new DiningLocation("Artesanos", "Student Alumni Union", "assets/locations/artesanos.jpeg", "A patisserie offering a wide selection of upscale delicacies, including specialty-created treats, breakfast pastries, sandwiches, cookies, tarts, and gluten-free and vegan options. Artesano Bakery & Café serves blended frozen drinks, espressos, lattes, and cappuccinos from Peet's Coffee®."))
 
 
 localStorage.setItem("locationData", JSON.stringify(locations))
