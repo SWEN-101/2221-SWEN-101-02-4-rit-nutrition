@@ -19,7 +19,7 @@ nutRITion can also help users seeking a more specific diet, such as one with a l
 1. Go to https://swen-101.github.io/2221-SWEN-101-02-4-rit-nutrition/pages/home.html
 
 ## Disclaimer
-The program is not fully functional and is instead a client side prototype
+The program is not fully functional and is instead a client side prototypeg
 
 ## Link or full list of requirements
 https://swen-101.github.io/2221-SWEN-101-02-4-rit-nutrition/pages/home.html
