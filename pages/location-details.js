@@ -74,6 +74,7 @@ function makeBody(location){
             <span id="foodContent">
                 
             </span>
+            <br><br><br><br><br>
         </span>
         
     `
