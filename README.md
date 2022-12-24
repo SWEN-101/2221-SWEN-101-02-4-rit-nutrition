@@ -10,7 +10,7 @@ nutRITion can also help users seeking a more specific diet, such as one with a l
 - Dylan McDonald
 - Cameron McIsaac
 - Alana Wu
-- Bevan Neiberg
+- Bev
 
 
 
